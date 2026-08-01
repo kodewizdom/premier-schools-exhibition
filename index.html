@@ -1,11 +1,662 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premier Schools Exhibition</title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
 </head>
+
 <body>
-    
+  <a href="#main-content" class="skip-link">Skip to Content</a>
+
+  <header class="header">
+    <nav class="container header__container" aria-label="Primary">
+      <a href="index.html" class="header__logo">
+        <img src="./assets/images/logo.webp" alt="Premier Schools Exhibition Logo" class="header__logo-image" />
+      </a>
+
+      <a href="#register" class="header__button">
+        <span class="header__button-icon"> ↗ </span>
+
+        <span class="header__button-text"> REGISTER NOW </span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Discover Gurugram's
+            <span>Top 30+ Schools</span>
+          </h1>
+
+          <p class="hero__subtitle">ALL IN ONE PLACE</p>
+
+          <div class="hero__event-card">
+            <div class="hero__event-row">
+              <div class="hero__event-location">
+                <h3>Apparel House,</h3>
+                <p>Sec 44, Gurugram</p>
+              </div>
+              <div class="hero__event-divider" aria-hidden="true"></div>
+              <div class="hero__event-date">
+                <h3>2-3 August 2025</h3>
+                <p>Sat-Sun | 10AM - 6PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__gallery-wrapper">
+          <div class="hero__gallery" id="hero-gallery" aria-label="School Life Gallery">
+            <div class="hero__column hero__column--1">
+              <img src="./assets/images/bn-sl-1.webp" alt="School kids learning science" class="hero__image" />
+              <img src="./assets/images/bn-sl-2.webp" alt="Students writing in library" class="hero__image" />
+              <img src="./assets/images/bn-sl-3.webp" alt="Primary students smiling in class" class="hero__image" />
+              <img src="./assets/images/bn-sl-4.webp" alt="Kids playing sports in school playground"
+                class="hero__image" />
+              <img src="./assets/images/bn-sl-1.webp" alt="School kids learning science" class="hero__image"
+                aria-hidden="true" />
+              <img src="./assets/images/bn-sl-2.webp" alt="Students writing in library" class="hero__image"
+                aria-hidden="true" />
+              <img src="./assets/images/bn-sl-3.webp" alt="Primary students smiling in class" class="hero__image"
+                aria-hidden="true" />
+              <img src="./assets/images/bn-sl-4.webp" alt="Kids playing sports in school playground" class="hero__image"
+                aria-hidden="true" />
+            </div>
+
+            <div class="hero__column hero__column--2">
+              <img src="./assets/images/bn-sl-5.webp" alt="Art class painting" class="hero__image" />
+              <img src="./assets/images/bn-sl-6.webp" alt="Music class playing keyboard" class="hero__image" />
+              <img src="./assets/images/bn-sl-7.webp" alt="Students in group project discussions" class="hero__image" />
+              <img src="./assets/images/bn-sl-8.webp" alt="Teacher explaining topic to class" class="hero__image" />
+              <img src="./assets/images/bn-sl-5.webp" alt="Art class painting" class="hero__image" aria-hidden="true" />
+              <img src="./assets/images/bn-sl-6.webp" alt="Music class playing keyboard" class="hero__image"
+                aria-hidden="true" />
+              <img src="./assets/images/bn-sl-7.webp" alt="Students in group project discussions" class="hero__image"
+                aria-hidden="true" />
+              <img src="./assets/images/bn-sl-8.webp" alt="Teacher explaining topic to class" class="hero__image"
+                aria-hidden="true" />
+            </div>
+
+            <div class="hero__column hero__column--3">
+              <img src="./assets/images/bn-sl-9.webp" alt="Computer lab coding class" class="hero__image" />
+              <img src="./assets/images/bn-sl-10.webp" alt="Children performing on stage" class="hero__image" />
+              <img src="./assets/images/bn-sl-11.webp" alt="Happy school girl with backpack" class="hero__image" />
+              <img src="./assets/images/bn-sl-12.webp" alt="Kids learning geometry and math" class="hero__image" />
+              <img src="./assets/images/bn-sl-9.webp" alt="Computer lab coding class" class="hero__image"
+                aria-hidden="true" />
+              <img src="./assets/images/bn-sl-10.webp" alt="Children performing on stage" class="hero__image"
+                aria-hidden="true" />
+              <img src="./assets/images/bn-sl-11.webp" alt="Happy school girl with backpack" class="hero__image"
+                aria-hidden="true" />
+              <img src="./assets/images/bn-sl-12.webp" alt="Kids learning geometry and math" class="hero__image"
+                aria-hidden="true" />
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__form" id="register">
+          <h2 class="hero__form-title">Enquire Now</h2>
+
+          <form action="#" method="POST" id="enquiry-form">
+            <label for="parent-name" class="sr-only">Parent's Name</label>
+            <input type="text" id="parent-name" placeholder="Parent's Name" required />
+
+            <label for="phone-number" class="sr-only">Phone Number</label>
+            <input type="tel" id="phone-number" placeholder="Phone Number" required pattern="[0-9]{10,12}"
+              title="Please enter a valid phone number (10 to 12 digits)" />
+
+            <label for="grade" class="sr-only">Which grade are you looking for?</label>
+            <textarea id="grade" placeholder="Which grade are you looking for?" required></textarea>
+
+            <button type="submit" class="hero__form-submit">
+              <span class="hero__form-submit-icon">→</span>
+              <span class="hero__form-submit-text">SUBMIT</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="statistics-schools" id="statistics-schools">
+      <div class="container statistics-schools__container">
+        <!-- Mobile-only Register & Counter Bar -->
+        <div class="mobile-register-bar">
+          <a href="#register" class="mobile-register-bar-btn">REGISTER NOW</a>
+          <div class="mobile-register-bar-counter">
+            <strong>7635+ PARENTS</strong>
+            <span>REGISTERED</span>
+          </div>
+        </div>
+
+        <!-- STATS SECTION (Pre-existing Award Images) -->
+        <div class="statistics__grid" aria-label="Key Exhibition Statistics">
+          <div class="statistics__item" tabindex="0">
+            <img src="./assets/images/award-1.webp" alt="Trusted by 1 Million+ Parents" class="statistics__img" />
+          </div>
+          <div class="statistics__item" tabindex="0">
+            <img src="./assets/images/award-2.webp" alt="22+ Years of Legacy" class="statistics__img" />
+          </div>
+          <div class="statistics__item" tabindex="0">
+            <img src="./assets/images/award-3.webp" alt="500+ Participating Schools" class="statistics__img" />
+          </div>
+          <div class="statistics__item" tabindex="0">
+            <img src="./assets/images/award-4.webp" alt="17 Cities Across the Globe" class="statistics__img" />
+          </div>
+        </div>
+
+        <div class="participating-schools__content">
+          <h2 class="participating-schools__title">Participating Schools</h2>
+
+          <div class="participating-schools__marquees" aria-label="School Logos Infinite Scrolling">
+            <div class="marquee-container marquee-container--ltr">
+              <div class="marquee-track" id="marquee-track-ltr">
+                <div class="marquee-item"><img src="./assets/images/pl-1.webp" alt="School Logo 1"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-2.webp" alt="School Logo 2"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-3.webp" alt="School Logo 3"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-4.webp" alt="School Logo 4"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-5.webp" alt="School Logo 5"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-6.webp" alt="School Logo 6"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-7.webp" alt="School Logo 7"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-8.webp" alt="School Logo 8"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-9.webp" alt="School Logo 9"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-10.webp" alt="School Logo 10"
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-1.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-2.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-3.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-4.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-5.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-6.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-7.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-8.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-9.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-10.webp" alt=""
+                    class="marquee-img" /></div>
+              </div>
+            </div>
+
+            <div class="marquee-container marquee-container--rtl">
+              <div class="marquee-track" id="marquee-track-rtl">
+                <div class="marquee-item"><img src="./assets/images/pl-1.webp" alt="School Logo 1"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-2.webp" alt="School Logo 2"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-3.webp" alt="School Logo 3"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-4.webp" alt="School Logo 4"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-5.webp" alt="School Logo 5"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-6.webp" alt="School Logo 6"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-7.webp" alt="School Logo 7"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-8.webp" alt="School Logo 8"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-9.webp" alt="School Logo 9"
+                    class="marquee-img" /></div>
+                <div class="marquee-item"><img src="./assets/images/pl-10.webp" alt="School Logo 10"
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-1.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-2.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-3.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-4.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-5.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-6.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-7.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-8.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-9.webp" alt=""
+                    class="marquee-img" /></div>
+                <div class="marquee-item" aria-hidden="true"><img src="./assets/images/pl-10.webp" alt=""
+                    class="marquee-img" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-banner-sec" id="video-banner-sec">
+      <div class="container video-banner-sec__container">
+        <div class="video-banner-sec__banner">
+          <div class="video-banner-sec__overlay-bg"></div>
+          <div class="video-banner-sec__content">
+            <div class="video-banner-sec__logo-wrapper">
+              <div class="video-banner-sec__logo-badge">21st Edition</div>
+              <img src="./assets/images/logo.webp" alt="Premier Schools Exhibition Logo"
+                class="video-banner-sec__logo" />
+            </div>
+            <p class="video-banner-sec__date">10-11 August, 2024</p>
+            <h3 class="video-banner-sec__venue">Apparel House, Sec-44, Gurugram</h3>
+
+            <button type="button" class="video-banner-sec__play-btn" id="play-video-btn-new"
+              aria-label="Play event overview video">
+              <span class="video-banner-sec__play-icon" aria-hidden="true">▶</span>
+              <span class="video-banner-sec__play-text">Play Event Video</span>
+            </button>
+          </div>
+
+          <div class="video-banner-sec__modal" id="video-modal-new" aria-hidden="true" role="dialog"
+            aria-label="Event Video Player">
+            <div class="video-banner-sec__modal-overlay" id="modal-overlay-new"></div>
+            <div class="video-banner-sec__modal-content">
+              <button type="button" class="video-banner-sec__modal-close" id="modal-close-new"
+                aria-label="Close video player">×</button>
+              <div class="video-banner-sec__video-wrapper">
+                <iframe src="https://www.youtube.com/embed/9mf6MbV_R1k?si=sjgPjSDsNLiFM3wT" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="choose-school" id="choose-school">
+      <div class="container choose-school__container">
+        <h2 class="choose-school__title">Choose the School That Fits You Best</h2>
+
+        <div class="choose-school__slider-wrapper">
+          <div class="choose-school__grid" id="choose-school-slider" aria-label="School Categories Carousel">
+            <div class="choose-school__card" tabindex="0" role="group" aria-label="Pre-Schools & Day Care card">
+              <img src="./assets/images/choose-1.webp" alt="Pre-Schools & Early Learning Centres"
+                class="choose-school__card-img" />
+              <div class="choose-school__card-overlay">
+                <h3 class="choose-school__card-title">Pre-Schools & Early Learning Centres</h3>
+                <p class="choose-school__card-desc">Nurturing foundational skills for toddlers and pre-primary children.
+                </p>
+              </div>
+            </div>
+
+            <div class="choose-school__card" tabindex="0" role="group" aria-label="Day Schools card">
+              <img src="./assets/images/choose-2.webp" alt="K–12 CBSE Day Schools" class="choose-school__card-img" />
+              <div class="choose-school__card-overlay">
+                <h3 class="choose-school__card-title">K–12 CBSE Day Schools</h3>
+                <p class="choose-school__card-desc">Reputed schools offering complete schooling from Kindergarten to
+                  Grade 12.</p>
+              </div>
+            </div>
+
+            <div class="choose-school__card" tabindex="0" role="group" aria-label="Boarding Schools card">
+              <img src="./assets/images/choose-3.png" alt="Heritage to New-Age Schools"
+                class="choose-school__card-img" />
+              <div class="choose-school__card-overlay">
+                <h3 class="choose-school__card-title">Heritage to New-Age Schools</h3>
+                <p class="choose-school__card-desc">Time-tested schools to innovative pedagogy, tech enabled,
+                  future-ready schools.</p>
+              </div>
+            </div>
+
+            <div class="choose-school__card" tabindex="0" role="group"
+              aria-label="International Curriculum Schools card">
+              <img src="./assets/images/choose-4.webp" alt="International Curriculum Schools - Students in library"
+                class="choose-school__card-img" />
+              <div class="choose-school__card-overlay">
+                <h3 class="choose-school__card-title">International Curriculum Schools</h3>
+                <p class="choose-school__card-desc">Offering IB, Cambridge, Finnish and other global curricula with a
+                  global learning environment.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="choose-school__dots" id="choose-school-dots" aria-label="School categories pagination"
+            role="tablist">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="appointment" id="appointment">
+      <div class="container appointment__container">
+        <div class="appointment__booking-banner">
+          <div class="appointment__booking-text">
+            <span class="appointment__booking-badge">Exciting Opportunities for Parents!</span>
+            <h2 class="appointment__booking-title"><span class="appointment__booking-title-highlight">Pre-schedule</span> Your<br />School Appointments</h2>
+            <p class="appointment__booking-tagline">To Avoid Rush</p>
+            <a href="#register" class="appointment__booking-btn">
+              <span class="appointment__booking-btn-icon">↗</span>
+              <span class="appointment__booking-btn-text">PRE-SCHEDULE NOW</span>
+            </a>
+          </div>
+          <div class="appointment__booking-image-wrapper">
+            <img src="./assets/images/copaback.jpg" alt="Parents consulting with school representatives"
+              class="appointment__booking-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="exhibition" id="exhibition">
+      <div class="exhibition__attractions">
+        <div class="container attractions__container">
+          <h2 class="attractions__title">Other Attractions for Parents & Kids</h2>
+
+          <div class="attractions__visuals">
+            <div class="attractions__diamond-grid-wrapper">
+              <picture>
+                <source media="(max-width: 768px)" srcset="./assets/images/attraction-pic-mobile.webp">
+                <img src="./assets/images/attraction-pic.webp" alt="Kids performing at Premier Kidz Awards"
+                  class="attractions__main-img" />
+              </picture>
+            </div>
+          </div>
+
+          <div class="attractions__content">
+
+            <div class="attractions__tablist" role="tablist" aria-label="Attractions Tabs">
+              <button type="button" class="attractions__tab active" id="tab-kidz-awards" role="tab" aria-selected="true"
+                aria-controls="attraction-panel" tabindex="0">
+                PREMIER KIDZ AWARDS
+              </button>
+              <button type="button" class="attractions__tab" id="tab-parent-exchange" role="tab" aria-selected="false"
+                aria-controls="attraction-panel" tabindex="-1">
+                THE PARENT EXCHANGE
+              </button>
+            </div>
+
+            <div class="attractions__panel" id="attraction-panel" role="tabpanel" aria-labelledby="tab-kidz-awards">
+              <h3 class="attractions__panel-title" id="attraction-title">Premier Kidz Awards</h3>
+              <p class="attractions__panel-desc" id="attraction-desc">
+                A prestigious platform celebrating young talent and building confidence by giving children the spotlight
+                to shine.
+              </p>
+              <a href="#register" class="attractions__panel-btn">
+                <span class="attractions__panel-btn-icon">↗</span>
+                <span class="attractions__panel-btn-text">TO KNOW MORE</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exhibition__highlights">
+        <div class="container highlights__container">
+          <h2 class="highlights__title">What Makes This Exhibition a Must-Visit</h2>
+
+          <div class="highlights__slider-wrapper" id="exhibition-slider">
+            <div class="highlights__grid" aria-label="Exhibition highlights carousel">
+              <div class="highlights__slide-page">
+                <div class="highlights__card" tabindex="0">
+                  <div class="highlights__card-icon-wrapper">
+                    <img src="./assets/icons/icon-1.webp" alt="" class="highlights__card-icon" />
+                  </div>
+                  <h3 class="highlights__card-title">Interact Directly with School Heads</h3>
+                  <p class="highlights__card-desc">Get answers straight from the experts</p>
+                </div>
+
+                <div class="highlights__card" tabindex="0">
+                  <div class="highlights__card-icon-wrapper">
+                    <img src="./assets/icons/icon-2.webp" alt="" class="highlights__card-icon" />
+                  </div>
+                  <h3 class="highlights__card-title">Compare Curriculum & Pedagogy</h3>
+                  <p class="highlights__card-desc">Understand the differences between CBSE, ICSE, IB, Cambridge, Finnish &
+                    more</p>
+                </div>
+
+                <div class="highlights__card" tabindex="0">
+                  <div class="highlights__card-icon-wrapper">
+                    <img src="./assets/icons/icon-3.webp" alt="" class="highlights__card-icon" />
+                  </div>
+                  <h3 class="highlights__card-title">Get Exclusive Fee Structures & Offers</h3>
+                  <p class="highlights__card-desc">Access transparent information and avail offers</p>
+                </div>
+
+                <div class="highlights__card" tabindex="0">
+                  <div class="highlights__card-icon-wrapper">
+                    <img src="./assets/icons/icon-4.webp" alt="" class="highlights__card-icon" />
+                  </div>
+                  <h3 class="highlights__card-title">Explore Schools Offerings</h3>
+                  <p class="highlights__card-desc">Preview infrastructure, co-curricular, teaching methodology and culture
+                  </p>
+                </div>
+              </div>
+
+              <div class="highlights__slide-page">
+                <div class="highlights__card" tabindex="0">
+                  <div class="highlights__card-icon-wrapper">
+                    <img src="./assets/icons/icon-5.webp" alt="" class="highlights__card-icon" />
+                  </div>
+                  <h3 class="highlights__card-title">On-the-Spot Applications & Counselling</h3>
+                  <p class="highlights__card-desc">Save time with instant applications and expert guidance</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="highlights__bottom-wrapper">
+        <div class="highlights__curve-bg">
+          <img src="./assets/images/round.png" alt="" class="highlights__curve-img" />
+        </div>
+        <div class="highlights__controls">
+          <button type="button" class="highlights__nav-btn highlights__nav-btn--prev" id="exhibition-prev-btn"
+            aria-label="Previous slide">←</button>
+          <button type="button" class="highlights__nav-btn highlights__nav-btn--next" id="exhibition-next-btn"
+            aria-label="Next slide">→</button>
+        </div>
+        <div class="highlights__dots" id="highlights-dots" aria-label="Highlights pagination" role="tablist"></div>
+      </div>
+
+      <div class="exhibition__reviews">
+        <div class="container reviews__container">
+          <h2 class="reviews__title">What Makes Parents Choose Us</h2>
+
+          <div class="reviews__slider-wrapper" id="reviews-slider-wrapper">
+            <div class="reviews__grid" id="reviews-slider" aria-label="Parents reviews carousel">
+              <div class="reviews__card" data-video-url="https://www.youtube.com/embed/2knY1UeXuHY?si=UBTQ0mBnIt6kCjmw&amp;rel=0&amp;autoplay=1" tabindex="0">
+                <div class="reviews__media-container">
+                  <img src="./assets/images/gallery-9.webp" alt="Parent sharing review feedback" class="reviews__card-img" />
+                </div>
+                <div class="reviews__card-overlay">
+                  <button type="button" class="reviews__play-icon-btn" aria-label="Play parent review video 1">
+                    <span class="reviews__play-triangle">▶</span>
+                  </button>
+                  <span class="reviews__card-label">Visitor’s Review</span>
+                </div>
+              </div>
+              
+              <div class="reviews__card" data-video-url="https://www.youtube.com/embed/FRMPkodPeb0?si=9mG8XT1G0zI1zhvi&amp;rel=0&amp;autoplay=1" tabindex="0">
+                <div class="reviews__media-container">
+                  <img src="./assets/images/gallery-10.webp" alt="Mother sharing school feedback" class="reviews__card-img" />
+                </div>
+                <div class="reviews__card-overlay">
+                  <button type="button" class="reviews__play-icon-btn" aria-label="Play parent review video 2">
+                    <span class="reviews__play-triangle">▶</span>
+                  </button>
+                  <span class="reviews__card-label">Visitor’s Review</span>
+                </div>
+              </div>
+
+              <div class="reviews__card" data-video-url="https://www.youtube.com/embed/RvIQTZS7BSU?si=vnMeJiWeWOZ0_8Vw&amp;rel=0&amp;autoplay=1" tabindex="0">
+                <div class="reviews__media-container">
+                  <img src="./assets/images/gallery-11.webp" alt="Father sharing review feedback" class="reviews__card-img" />
+                </div>
+                <div class="reviews__card-overlay">
+                  <button type="button" class="reviews__play-icon-btn" aria-label="Play parent review video 3">
+                    <span class="reviews__play-triangle">▶</span>
+                  </button>
+                  <span class="reviews__card-label">Visitor’s Review</span>
+                </div>
+              </div>
+
+              <div class="reviews__card" data-video-url="https://www.youtube.com/embed/S-9yWdfBzEw?si=5Z-uaKVvagtZld2d&amp;rel=0&amp;autoplay=1" tabindex="0">
+                <div class="reviews__media-container">
+                  <img src="./assets/images/gallery-12.webp" alt="Family sharing admission feedback" class="reviews__card-img" />
+                </div>
+                <div class="reviews__card-overlay">
+                  <button type="button" class="reviews__play-icon-btn" aria-label="Play parent review video 4">
+                    <span class="reviews__play-triangle">▶</span>
+                  </button>
+                  <span class="reviews__card-label">Visitor’s Review</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviews__controls">
+            <button type="button" class="reviews__nav-btn reviews__nav-btn--prev" id="reviews-prev-btn" aria-label="Previous slide">←</button>
+            <button type="button" class="reviews__nav-btn reviews__nav-btn--next" id="reviews-next-btn" aria-label="Next slide">→</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="exhibition__gallery-section">
+        <div class="container gallery-section__container">
+          <h2 class="gallery-section__title">Gallery</h2>
+          
+          <div class="gallery-section__scroll-wrapper">
+            <div class="gallery-section__scroll" id="gallery-slider" aria-label="Exhibition photo scroll row">
+              <div class="gallery-section__grid">
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-1.webp" alt="Exhibition crowd parents 1" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-2.webp" alt="Exhibition school representative 2" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-3.webp" alt="Exhibition visitor parents 3" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-4.webp" alt="Exhibition student award 4" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-5.webp" alt="Exhibition stage dance 5" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-6.webp" alt="Exhibition painting board 6" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-7.webp" alt="Exhibition school booths 7" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-8.webp" alt="Exhibition child awards 8" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-9.webp" alt="Exhibition visitor feedback 9" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-10.webp" alt="Exhibition mother feedback 10" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-11.webp" alt="Exhibition father feedback 11" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-12.webp" alt="Exhibition family admission 12" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-13.webp" alt="Exhibition crowd parents 13" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-14.webp" alt="School presentation 14" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-15.webp" alt="Students playing music 15" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-16.webp" alt="School awards ceremony 16" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-17.webp" alt="Parents consulting booths 17" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-18.webp" alt="Kids dance performance 18" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-19.webp" alt="Admission registration desk 19" /></div>
+                <div class="gallery-section__img-wrapper"><img src="./assets/images/gallery-20.webp" alt="Audience parents smiling 20" /></div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <svg width="0" height="0" style="position: absolute;">
+    <defs>
+      <clipPath id="gallery-frame" clipPathUnits="objectBoundingBox">
+        <path d="M 0,0.05 C 0.25,0.18 0.75,0.18 1,0.05 L 1,0.95 C 0.75,0.82 0.25,0.82 0,0.95 Z" />
+      </clipPath>
+    </defs>
+  </svg>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__logo-col">
+        <img src="./assets/images/logo.webp" alt="Premier Schools Exhibition Logo" class="footer__logo" />
+      </div>
+
+      <div class="footer__info-col">
+        <div class="footer__icon-box">
+          <img src="./assets/icons/pin.webp" alt="Location Map Pin" class="footer__icon-img" />
+        </div>
+        <div class="footer__info-text">
+          <strong>Corporate Office:</strong>
+          <span>Suite B-5, Ballygunge Park Tower,</span>
+          <span>67B Ballygunge Circular Road,</span>
+          <span>Kolkata - 700019</span>
+        </div>
+      </div>
+
+      <div class="footer__info-col">
+        <div class="footer__icon-box">
+          <img src="./assets/icons/pin.webp" alt="Location Map Pin" class="footer__icon-img" />
+        </div>
+        <div class="footer__info-text">
+          <strong>Ahmedabad Office:</strong>
+          <span>12/AA, Swastik Chambers, Near CU</span>
+          <span>Shah College, Ashram Road,</span>
+          <span>Ahmedabad - 380009</span>
+        </div>
+      </div>
+
+      <div class="footer__info-col">
+        <div class="footer__icon-box">
+          <img src="./assets/icons/call.webp" alt="Call Telephone Icon" class="footer__icon-img" />
+        </div>
+        <div class="footer__info-text">
+          <strong>Call us on</strong>
+          <a href="tel:9674805912">9674805912</a>
+          <a href="tel:9674585012">9674585012</a>
+        </div>
+      </div>
+
+      <div class="footer__socials-col">
+        <strong>Follow us on</strong>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-box" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-box" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+            </svg>
+          </a>
+          <a href="#" class="footer__social-box" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.52 3.545 12 3.545 12 3.545s-7.52 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.868.508 9.388.508 9.388.508s7.52 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-container">
+        <p class="footer__copyright">
+          Copyright &copy; 2025 | All rights reserved. Premier Schools Exhibition
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
 </body>
+
 </html>
